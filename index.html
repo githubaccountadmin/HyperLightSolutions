@@ -10,7 +10,7 @@
             margin: 0;
             padding: 0;
             background: #000000;
-            color: #808080;
+            color: #C0C0C0; /* Light gray for text */
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -21,58 +21,49 @@
             padding: 20px;
             max-width: 1200px;
             width: 100%;
-            display: flex;
-            justify-content: space-between;
         }
         h1 {
             font-size: 4em;
             margin: 0;
-            background: linear-gradient(45deg, #00FF00, #00B7EB);
+            background: linear-gradient(45deg, #9400D3, #4B0082);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            text-shadow: 0 0 10px #00FF00, 0 0 20px #00B7EB, 0 0 30px #00B7EB, 0 0 40px #00B7EB;
+            text-shadow: 0 0 10px #9400D3, 0 0 20px #4B0082, 0 0 30px #4B0082, 0 0 40px #4B0082;
             animation: glow 1s ease-in-out infinite alternate;
         }
         @keyframes glow {
             from {
-                text-shadow: 0 0 10px #00FF00, 0 0 20px #00B7EB, 0 0 30px #00B7EB, 0 0 40px #00B7EB;
+                text-shadow: 0 0 10px #9400D3, 0 0 20px #4B0082, 0 0 30px #4B0082, 0 0 40px #4B0082;
             }
             to {
-                text-shadow: 0 0 20px #00FF00, 0 0 30px #00B7EB, 0 0 40px #00B7EB, 0 0 50px #00B7EB;
+                text-shadow: 0 0 20px #9400D3, 0 0 30px #4B0082, 0 0 40px #4B0082, 0 0 50px #4B0082;
             }
         }
         .sub-title {
             font-size: 1.5em;
             margin: 10px 0 30px;
-            color: #808080;
+            color: #C0C0C0;
         }
         .cta-button {
             display: inline-block;
             padding: 15px 30px;
             background: none;
-            border: 2px solid #00FF00;
-            color: #00FF00;
+            border: 2px solid #9400D3;
+            color: #9400D3;
             text-decoration: none;
             font-weight: bold;
             text-transform: uppercase;
             transition: all 0.3s ease;
         }
         .cta-button:hover {
-            background: #00FF00;
+            background: #9400D3;
             color: #000;
         }
         .services, .additional-services {
-            background: rgba(255, 255, 255, 0.05);
+            background: rgba(148, 0, 211, 0.05); /* Dark purple with transparency */
             padding: 20px;
             border-radius: 10px;
             margin-top: 50px;
-        }
-        .services {
-            flex: 2; /* Takes up more space */
-            margin-right: 20px;
-        }
-        .additional-services {
-            flex: 1; /* Takes up less space */
         }
         ul {
             list-style-type: none;
@@ -87,19 +78,19 @@
             background: none;
             border: 1px solid transparent;
             transition: all 0.3s ease;
-            color: #808080;
+            color: #C0C0C0;
             font-size: 1.1em;
             position: relative;
         }
         li:hover {
-            border: 1px solid #00FF00;
-            color: #00FF00;
-            text-shadow: 0 0 10px #00FF00;
+            border: 1px solid #9400D3;
+            color: #9400D3;
+            text-shadow: 0 0 10px #9400D3;
         }
         .tooltip {
             visibility: hidden;
             width: 300px;
-            background-color: rgba(0, 0, 0, 0.8);
+            background-color: rgba(75, 0, 130, 0.8); /* Darker purple for tooltips */
             color: #fff;
             text-align: center;
             border-radius: 6px;
@@ -119,9 +110,8 @@
         footer {
             text-align: center;
             padding: 20px 0;
-            color: #808080;
+            color: #C0C0C0;
             font-size: 0.9em;
-            margin-top: auto;
             width: 100%;
         }
     </style>
@@ -129,36 +119,34 @@
 <body>
 
 <div class="container">
-    <div>
-        <h1>HyperLight</h1>
-        <p class="sub-title">Solutions, LLC</p>
-        <a href="mailto:hyperlightsolutions@gmail.com" class="cta-button">Consult With Us</a>
+    <h1>HyperLight</h1>
+    <p class="sub-title">Solutions, LLC</p>
+    <a href="mailto:hyperlightsolutions@gmail.com" class="cta-button">Consult With Us</a>
 
-        <section class="services">
-            <h2 style="color: #00FF00; margin-bottom: 20px;">Our AI Services:</h2>
-            <ul>
-                <li>
-                    AI Agents for Life Management
-                    <div class="tooltip">Automate your daily tasks from scheduling to personal finance management, letting AI handle the mundane so you can focus on what matters most.</div>
-                </li>
-                <li>
-                    Business Automation with AI
-                    <div class="tooltip">Leverage AI to streamline business processes, from customer service automation to predictive analytics for strategic decision-making.</div>
-                </li>
-                <li>
-                    AI-Driven Trading Bots
-                    <div class="tooltip">Enhance your trading strategies with AI bots that analyze market trends, execute trades at optimal times, and manage risk with precision.</div>
-                </li>
-                <li>
-                    Voice-Activated AI Assistants
-                    <div class="tooltip">Control your computer with your voice; an AI that listens, understands, and executes your commands, offering one of the most versatile and powerful setups when done right.</div>
-                </li>
-            </ul>
-        </section>
-    </div>
+    <section class="services">
+        <h2 style="color: #9400D3; margin-bottom: 20px;">Our AI Services:</h2>
+        <ul>
+            <li>
+                AI Agents for Life Management
+                <div class="tooltip">Automate your daily tasks from scheduling to personal finance management, letting AI handle the mundane so you can focus on what matters most.</div>
+            </li>
+            <li>
+                Business Automation with AI
+                <div class="tooltip">Leverage AI to streamline business processes, from customer service automation to predictive analytics for strategic decision-making.</div>
+            </li>
+            <li>
+                AI-Driven Trading Bots
+                <div class="tooltip">Enhance your trading strategies with AI bots that analyze market trends, execute trades at optimal times, and manage risk with precision.</div>
+            </li>
+            <li>
+                Voice-Activated AI Assistants
+                <div class="tooltip">Control your computer with your voice; an AI that listens, understands, and executes your commands, offering some of the most versatile and powerful setups available.</div>
+            </li>
+        </ul>
+    </section>
 
     <section class="additional-services">
-        <h2 style="color: #00FF00; margin-bottom: 20px;">Additional Services:</h2>
+        <h2 style="color: #9400D3; margin-bottom: 20px;">Additional Services:</h2>
         <ul>
             <li>
                 Crypto Consultations
