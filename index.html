@@ -3,76 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Life Management - DeFi369</title>
+    <title>HyperLight Solutions, LLC</title>
     <style>
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: 'Courier New', Courier, monospace;
             margin: 0;
             padding: 0;
-            background: linear-gradient(to right, #000046, #1CB5E0);
-            color: white;
+            background: #000000;
+            color: #808080;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
         }
         .container {
+            text-align: center;
             padding: 20px;
             max-width: 1200px;
-            margin: auto;
-        }
-        .header {
-            text-align: center;
-            padding: 50px 0;
+            width: 100%;
         }
         h1 {
-            font-size: 3em;
-            margin-bottom: 20px;
+            font-size: 4em;
+            margin: 0;
+            background: linear-gradient(45deg, #00FF00, #00B7EB);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 0 10px #00FF00, 0 0 20px #00B7EB, 0 0 30px #00B7EB, 0 0 40px #00B7EB;
+            animation: glow 1s ease-in-out infinite alternate;
         }
-        p {
-            font-size: 1.2em;
-            line-height: 1.5;
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 10px #00FF00, 0 0 20px #00B7EB, 0 0 30px #00B7EB, 0 0 40px #00B7EB;
+            }
+            to {
+                text-shadow: 0 0 20px #00FF00, 0 0 30px #00B7EB, 0 0 40px #00B7EB, 0 0 50px #00B7EB;
+            }
+        }
+        .sub-title {
+            font-size: 1.5em;
+            margin: 10px 0 30px;
+            color: #808080;
         }
         .cta-button {
             display: inline-block;
             padding: 15px 30px;
-            background-color: #FFD700;
-            color: black;
+            background: none;
+            border: 2px solid #00FF00;
+            color: #00FF00;
             text-decoration: none;
             font-weight: bold;
-            border-radius: 5px;
-            transition: background-color 0.3s;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
         }
         .cta-button:hover {
-            background-color: #FFC000;
+            background: #00FF00;
+            color: #000;
         }
         .services {
-            background: rgba(255, 255, 255, 0.1);
+            background: rgba(255, 255, 255, 0.05);
             padding: 20px;
             border-radius: 10px;
-            margin-top: 20px;
+            width: 100%;
+            margin-top: 50px;
         }
         ul {
             list-style-type: none;
             padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
         }
         li {
-            margin-bottom: 10px;
+            margin: 10px;
+            padding: 10px;
+            background: none;
+            border: 1px solid transparent;
+            transition: all 0.3s ease;
+            color: #808080;
+            font-size: 1.1em;
+        }
+        li:hover {
+            border: 1px solid #00FF00;
+            color: #00FF00;
+            text-shadow: 0 0 10px #00FF00;
         }
         footer {
             text-align: center;
             padding: 20px 0;
+            color: #808080;
             font-size: 0.9em;
+            margin-top: auto;
         }
     </style>
 </head>
 <body>
 
 <div class="container">
-    <header class="header">
-        <h1>Enhance Your Life with AI</h1>
-        <p>No time? Let AI manage your life, business, and more.</p>
-        <a href="mailto:your.email@example.com" class="cta-button">Consult With DeFi369</a>
-    </header>
+    <h1>HyperLight</h1>
+    <p class="sub-title">Solutions, LLC</p>
+    <a href="mailto:your.email@example.com" class="cta-button">Consult With Us</a>
 
     <section class="services">
-        <h2>Our AI Services:</h2>
+        <h2 style="color: #00FF00; margin-bottom: 20px;">Our AI Services:</h2>
         <ul>
             <li>AI Agents for Life Management</li>
             <li>Business Automation with AI</li>
@@ -83,23 +115,12 @@
 </div>
 
 <footer>
-    <p>© 2024 DeFi369 - Powered by Innovation</p>
+    <p>© 2024 HyperLight Solutions, LLC - Powered by Innovation</p>
 </footer>
 
 <script>
     document.addEventListener('DOMContentLoaded', function() {
-        // Simple animation for the CTA button
-        const ctaButton = document.querySelector('.cta-button');
-        ctaButton.style.opacity = '0';
-        let opacity = 0;
-        const fadeIn = setInterval(() => {
-            if (opacity < 1) {
-                opacity += 0.05;
-                ctaButton.style.opacity = opacity;
-            } else {
-                clearInterval(fadeIn);
-            }
-        }, 50);
+        // No additional JavaScript needed for this design
     });
 </script>
 
