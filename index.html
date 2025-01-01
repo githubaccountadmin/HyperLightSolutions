@@ -81,11 +81,32 @@
             transition: all 0.3s ease;
             color: #808080;
             font-size: 1.1em;
+            position: relative;
         }
         li:hover {
             border: 1px solid #00FF00;
             color: #00FF00;
             text-shadow: 0 0 10px #00FF00;
+        }
+        .tooltip {
+            visibility: hidden;
+            width: 300px;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 10px 0;
+            position: absolute;
+            z-index: 1;
+            bottom: 125%;
+            left: 50%;
+            margin-left: -150px;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        li:hover .tooltip {
+            visibility: visible;
+            opacity: 1;
         }
         footer {
             text-align: center;
@@ -101,21 +122,33 @@
 <div class="container">
     <h1>HyperLight</h1>
     <p class="sub-title">Solutions, LLC</p>
-    <a href="mailto:your.email@example.com" class="cta-button">Consult With Us</a>
+    <a href="mailto:hyperlightsolutions@gmail.com" class="cta-button">Consult With Us</a>
 
     <section class="services">
         <h2 style="color: #00FF00; margin-bottom: 20px;">Our AI Services:</h2>
         <ul>
-            <li>AI Agents for Life Management</li>
-            <li>Business Automation with AI</li>
-            <li>AI-Driven Trading Bots</li>
-            <li>Voice-Activated AI Assistants</li>
+            <li>
+                AI Agents for Life Management
+                <div class="tooltip">Automate your daily tasks from scheduling to personal finance management, letting AI handle the mundane so you can focus on what matters most.</div>
+            </li>
+            <li>
+                Business Automation with AI
+                <div class="tooltip">Leverage AI to streamline business processes, from customer service automation to predictive analytics for strategic decision-making.</div>
+            </li>
+            <li>
+                AI-Driven Trading Bots
+                <div class="tooltip">Enhance your trading strategies with AI bots that analyze market trends, execute trades at optimal times, and manage risk with precision.</div>
+            </li>
+            <li>
+                Voice-Activated AI Assistants
+                <div class="tooltip">Control your digital life hands-free with AI assistants that can manage your schedule, set reminders, or even order services with voice commands.</div>
+            </li>
         </ul>
     </section>
 </div>
 
 <footer>
-    <p>© 2024 HyperLight Solutions, LLC - Powered by Innovation</p>
+    <p>© 2024 HyperLight Solutions, LLC - Powered by HyperLight AI</p>
 </footer>
 
 <script>
