@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Life Management - DeFi369</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #000046, #1CB5E0);
+            color: white;
+        }
+        .container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .header {
+            text-align: center;
+            padding: 50px 0;
+        }
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 1.2em;
+            line-height: 1.5;
+        }
+        .cta-button {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #FFD700;
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .cta-button:hover {
+            background-color: #FFC000;
+        }
+        .services {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header class="header">
+        <h1>Enhance Your Life with AI</h1>
+        <p>No time? Let AI manage your life, business, and more.</p>
+        <a href="mailto:your.email@example.com" class="cta-button">Consult With DeFi369</a>
+    </header>
+
+    <section class="services">
+        <h2>Our AI Services:</h2>
+        <ul>
+            <li>AI Agents for Life Management</li>
+            <li>Business Automation with AI</li>
+            <li>AI-Driven Trading Bots</li>
+            <li>Voice-Activated AI Assistants</li>
+        </ul>
+    </section>
+</div>
+
+<footer>
+    <p>© 2024 DeFi369 - Powered by Innovation</p>
+</footer>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Simple animation for the CTA button
+        const ctaButton = document.querySelector('.cta-button');
+        ctaButton.style.opacity = '0';
+        let opacity = 0;
+        const fadeIn = setInterval(() => {
+            if (opacity < 1) {
+                opacity += 0.05;
+                ctaButton.style.opacity = opacity;
+            } else {
+                clearInterval(fadeIn);
+            }
+        }, 50);
+    });
+</script>
+
+</body>
+</html>
