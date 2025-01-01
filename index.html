@@ -21,6 +21,8 @@
             padding: 20px;
             max-width: 1200px;
             width: 100%;
+            display: flex;
+            justify-content: space-between;
         }
         h1 {
             font-size: 4em;
@@ -59,12 +61,18 @@
             background: #00FF00;
             color: #000;
         }
-        .services {
+        .services, .additional-services {
             background: rgba(255, 255, 255, 0.05);
             padding: 20px;
             border-radius: 10px;
-            width: 100%;
             margin-top: 50px;
+        }
+        .services {
+            flex: 2; /* Takes up more space */
+            margin-right: 20px;
+        }
+        .additional-services {
+            flex: 1; /* Takes up less space */
         }
         ul {
             list-style-type: none;
@@ -114,34 +122,51 @@
             color: #808080;
             font-size: 0.9em;
             margin-top: auto;
+            width: 100%;
         }
     </style>
 </head>
 <body>
 
 <div class="container">
-    <h1>HyperLight</h1>
-    <p class="sub-title">Solutions, LLC</p>
-    <a href="mailto:hyperlightsolutions@gmail.com" class="cta-button">Consult With Us</a>
+    <div>
+        <h1>HyperLight</h1>
+        <p class="sub-title">Solutions, LLC</p>
+        <a href="mailto:hyperlightsolutions@gmail.com" class="cta-button">Consult With Us</a>
 
-    <section class="services">
-        <h2 style="color: #00FF00; margin-bottom: 20px;">Our AI Services:</h2>
+        <section class="services">
+            <h2 style="color: #00FF00; margin-bottom: 20px;">Our AI Services:</h2>
+            <ul>
+                <li>
+                    AI Agents for Life Management
+                    <div class="tooltip">Automate your daily tasks from scheduling to personal finance management, letting AI handle the mundane so you can focus on what matters most.</div>
+                </li>
+                <li>
+                    Business Automation with AI
+                    <div class="tooltip">Leverage AI to streamline business processes, from customer service automation to predictive analytics for strategic decision-making.</div>
+                </li>
+                <li>
+                    AI-Driven Trading Bots
+                    <div class="tooltip">Enhance your trading strategies with AI bots that analyze market trends, execute trades at optimal times, and manage risk with precision.</div>
+                </li>
+                <li>
+                    Voice-Activated AI Assistants
+                    <div class="tooltip">Control your computer with your voice; an AI that listens, understands, and executes your commands, offering one of the most versatile and powerful setups when done right.</div>
+                </li>
+            </ul>
+        </section>
+    </div>
+
+    <section class="additional-services">
+        <h2 style="color: #00FF00; margin-bottom: 20px;">Additional Services:</h2>
         <ul>
             <li>
-                AI Agents for Life Management
-                <div class="tooltip">Automate your daily tasks from scheduling to personal finance management, letting AI handle the mundane so you can focus on what matters most.</div>
+                Crypto Consultations
+                <div class="tooltip">Expert advice on true DeFi, from beginners to advanced users, ensuring you navigate the crypto world with confidence and security.</div>
             </li>
             <li>
-                Business Automation with AI
-                <div class="tooltip">Leverage AI to streamline business processes, from customer service automation to predictive analytics for strategic decision-making.</div>
-            </li>
-            <li>
-                AI-Driven Trading Bots
-                <div class="tooltip">Enhance your trading strategies with AI bots that analyze market trends, execute trades at optimal times, and manage risk with precision.</div>
-            </li>
-            <li>
-                Voice-Activated AI Assistants
-                <div class="tooltip">Control your computer with your voice; an AI that listens, understands, and executes your commands, offering one of the most versatile and powerful setups.</div>
+                Custom Computer Builds/Setups
+                <div class="tooltip">Tailored solutions for AI, crypto, and beyond; secure, high-performance systems designed for your specific needs.</div>
             </li>
         </ul>
     </section>
